@@ -185,6 +185,38 @@ console.log(Object.entries(producto));
 
 
 //? ========================================================================================================================
-//? ===================================================  Funciones  ========================================================
+//? ===================================================  Arrays  ========================================================
 //? ========================================================================================================================
 
+//* Crear un array / arreglo
+const numeros = [10, 20, 30]
+const numeros2 = new Array(10, 20 ,30)
+
+//* Acceder a un valor
+console.log(numeros[0])
+
+//* Recorrer arreglo
+const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'];
+for (let i = 0; i < meses.length; i++) {
+    console.log(meses[i]);
+}
+
+//* Añadir elementos al final
+meses.push('Abril')
+
+//* Añadir elementos al inicio
+meses.unshift('Diciembre')
+
+//* elimnar elementos del inicio
+meses.shift()
+
+//* usar Spread Operator 
+const carrito = []
+const producto = { precio: 400 }
+let resultado;
+resultado = [...carrito, producto];
+
+//* eliminar ultimo elemento .pop
+carrito.pop();
+
+//* eliminar primer elemento
